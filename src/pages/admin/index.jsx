@@ -325,10 +325,14 @@ const AdminPage = () => {
                 {(() => {
                   if(user.ip){
                     var json = JSON.parse(user.ip);
-                    return `
-                    ${json.IP} \n
-                    ${json.country}\n
-                    ${json.city}\n`;
+                    if(json){
+                      return `
+                      ${json.IP} \n
+                      ${json.country}\n
+                      ${json.city}\n`;
+                    }else{
+                      return "Unknown"
+                    }
                   }else{
                     return "Unknown"
                   }
