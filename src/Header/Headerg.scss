@@ -1,0 +1,43 @@
+.Header {
+  background-color: #355797;
+  // border-bottom: 0.5px solid hsla(0,0%,100%,.9);
+  padding: 15px 0;
+}
+
+// .Header__container {
+//   max-width: 850px;
+// }
+
+.Header__content {
+  gap: 1rem;
+}
+
+.Header__search {
+  width: 40px;
+}
+
+.SupportInbox:before {
+  content: "Support ";
+}
+
+.Header__sublogo {
+  color: #fff;
+  font-family: Awesome,sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  padding-left: 1rem;
+  position: relative;
+  word-spacing: 1px;
+}
+
+.SupportInbox:after {
+  content: "Inbox";
+}
+
+.Header__logo {
+  min-width: 55px;
+  width: 55px;
+}

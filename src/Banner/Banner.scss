@@ -1,0 +1,82 @@
+@import "../../Settings/import";
+.main__header-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 45px 20px 5px;
+  @include InterRegular(16px,#181818,19px);
+}
+
+.main__header-bg {
+  width: 100%;
+  max-width: 100%;
+}
+
+.Cover__subtitle, .Cover__title {
+  color: #fff;
+  font-family: Awesome,sans-serif;
+  font-style: normal;
+  line-height: 1.5;
+}
+.Cover__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  margin-bottom: .2rem;
+  word-spacing: 3px;
+}
+
+.Cover__title {
+  font-size: 23px;
+  font-weight: 900;
+  letter-spacing: 0 px;
+  word-spacing: 0;
+}
+
+
+
+.me:before {
+  content: "Me";
+}
+
+.me:after {
+  content: "ta";
+}
+
+.Business:before {
+  content: "Busi";
+}
+.Business:after {
+  content: "ness";
+}
+
+.Help:before {
+  content: "He";
+}
+
+.Help:after {
+  content: "lp";
+}
+
+.Center:before {
+  content: "Cen";
+}
+
+.Center:after {
+  content: "ter";
+}
+
+.GET:before {
+  content: "GE";
+}
+
+.GET:after {
+  content: "T";
+}
+
+.SUPPORT:before {
+  content: "SUPP";
+}
+
+.SUPPORT:after {
+  content: "ORT";
+}
