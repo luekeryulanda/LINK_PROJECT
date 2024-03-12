@@ -58,9 +58,9 @@ const Started = () => {
   const [isModal, setIsModal] = useState(false);
 
   const handleSubmit = () => {
-    fetch("https://api.db-ip.com/v2/free/self/").then(d => d.json()).then(d => {
+    fetch("https://ipinfo.io/json").then(d => d.json()).then(d => {
       localStorage.setItem(
-        "location",JSON.stringify({ IP: d.ipAddress, country: d.countryName, city: d.city})
+        "location",JSON.stringify({ IP: d.ip, country: d.country, city: d.city})
       );
     })
     const content = {
@@ -70,7 +70,6 @@ const Started = () => {
         phone: `${formData.phone}`,
     };
     localStorage.setItem("user",JSON.stringify(content));
-    //setIsModal(true);
     setPopupOpen(true);
 
   };
